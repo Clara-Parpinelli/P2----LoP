@@ -38,34 +38,6 @@ var ganhou = false
 
 //Mudança de tela
 var tela = 0;
-
-function mouseClicked() {
-    if (tela == 1 && nivel == 1) {
-        if (escolhaFase == 1 || escolhaFase == 2) {
-            tela = 4;
-        }
-        if (escolhaFase == 3) {
-            nivel = 2;
-        }
-    }
-    else if (tela == 1 && nivel == 2) {
-            if (escolhaFase == 2 || escolhaFase == 3) {
-                tela = 4;
-            }
-            if (escolhaFase == 1) {
-                nivel = 3;
-            }
-    }else{
-      if (tela == 1 && nivel == 3) {
-            if (escolhaFase == 3 || escolhaFase == 1) {
-                tela = 4;
-            }
-            if (escolhaFase == 2) {
-                nivel = 4;
-            }        
-      }
-    }
-}
 function preload(){
   fonte = loadFont('VT323-Regular.ttf');
   img_autor = loadImage('Maria_Clara.png')
